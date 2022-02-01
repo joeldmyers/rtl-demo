@@ -26,6 +26,12 @@ const App = () => {
     </div>
   );
 
+  const SubmitButton = () => (
+    <button type="submit" value="Submit" onClick={handleSubmit}>
+      Submit
+    </button>
+  );
+
   if (submitIsSuccessful) return <SuccessMessage />;
 
   return (
@@ -75,9 +81,7 @@ const App = () => {
         {showErrors && !notes && (
           <span className="error">Please enter notes</span>
         )}
-        <button type="submit" value="Submit" onClick={handleSubmit}>
-          Submit
-        </button>
+        <SubmitButton />
       </div>
     </div>
   );
