@@ -10,7 +10,6 @@ const App = () => {
   const [submitIsSuccessful, setSubmitIsSuccessful] = useState(false);
 
   const handleSubmit = () => {
-    console.log("submitting");
     if (!firstName || !lastName || !email || !notes) {
       setShowErrors(true);
       return;
