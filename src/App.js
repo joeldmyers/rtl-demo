@@ -53,7 +53,7 @@ const App = () => {
         {showErrors && !lastName && (
           <span className="error">Please enter a last name</span>
         )}
-        <label htmlFor="lname">Email:</label>
+        <label htmlFor="email">Email:</label>
         <input
           type="email"
           id="email"
@@ -64,7 +64,7 @@ const App = () => {
         {showErrors && !email && (
           <span className="error">Please enter an email</span>
         )}
-        <label htmlFor="lname">Notes:</label>
+        <label htmlFor="notes">Notes:</label>
         <input
           type="text"
           id="notes"
